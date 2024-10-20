@@ -5,3 +5,4 @@ export default function page() {
     <div className='flex justify-center '>My page</div>
   )
 }
+ 
