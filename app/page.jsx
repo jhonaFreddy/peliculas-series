@@ -1,17 +1,39 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
-export default function page() {
+export default function HomePage() {
   return (
-    <div className='flex justify-center '>
-      <nav className='w-full h-20 bg-blue-600 flex justify-between items-center px-10'>
-        <h2>DEMO Streaming</h2>
-        <div>
-          <button className='text-white text-md'>Log in</button>
-          <button className='bg-black text-white p-3'>Start your free trial</button>
-        </div>
-      </nav>
-    </div>
+    <div className=''> 
+      <div className='h-16 items-center flex text-2xl px-20 w-full text-white bg-gray-700'>
+        Popular Titles
+      </div>
+    <div className='flex  gap-10 px-20 py-10'>
+      
+    <Link href="/series">
+        <div className='flex flex-col items-center'>
+        <div className='w-36 h-48 bg-gray-800 flex justify-center items-center text-white text-3xl cursor-pointer hover:bg-gray-700 bg-no-repeat bg-center bg-'
+        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: 'contain', }}>
+          Series
 
-  )
+        </div>
+        <div>
+          Popular Series
+        </div>
+        </div>
+      </Link>
+      <Link href="/movies">
+        <div className='flex flex-col items-center'>
+        <div className='w-36 h-48 bg-gray-800 flex justify-center items-center text-white text-3xl cursor-pointer hover:bg-gray-700 bg-no-repeat bg-center bg-'
+        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: 'contain', }}>
+          Movies
+
+        </div>
+        <div>
+          Popular Movies
+        </div>
+        </div>
+      </Link>
+    </div>
+    </div>
+  );
 }
- 
