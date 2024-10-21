@@ -21,7 +21,11 @@ export default function SeriesPage() {
   }, []);
 
   return (
-    <div className='p-10'>
+    <div>
+        <div className='h-16 items-center flex text-2xl px-20 w-full text-white bg-gray-700'>
+        Popular Series
+      </div>
+      <div className='p-10'>
       {loading ? (
         <div className="px-20 text-xl">Loading...</div>
       ) : error ? ( 
@@ -30,5 +34,7 @@ export default function SeriesPage() {
         <ProductList products={series} />
       )}
     </div>
+    </div>
+    
   );
 }

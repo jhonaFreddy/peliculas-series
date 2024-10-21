@@ -24,7 +24,12 @@ export default function MoviesPage() {
   }, []);
 
   return (
-    <div className='p-10'>
+    <div>
+        <div className='h-16 items-center flex text-2xl px-20 w-full text-white bg-gray-700'>
+        Popular Movies
+      </div>
+        <div className='p-10'>
+        
       {loading ? (
         <div className="px-20 text-xl">Loading...</div>
       ) : error ? ( 
@@ -32,6 +37,7 @@ export default function MoviesPage() {
       ) : (
         <ProductList products={movies} />
       )}
+    </div>
     </div>
   );
 }
