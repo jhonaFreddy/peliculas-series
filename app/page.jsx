@@ -12,7 +12,7 @@ export default function HomePage() {
     <Link href="/series">
         <div className='flex flex-col items-center'>
         <div className='w-36 h-48 bg-gray-800 flex justify-center items-center text-white text-3xl cursor-pointer hover:bg-gray-700 bg-no-repeat bg-center bg-'
-        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: 'contain', }}>
+        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: '300px', }}>
           Series
 
         </div>
@@ -24,7 +24,7 @@ export default function HomePage() {
       <Link href="/movies">
         <div className='flex flex-col items-center'>
         <div className='w-36 h-48 bg-gray-800 flex justify-center items-center text-white text-3xl cursor-pointer hover:bg-gray-700 bg-no-repeat bg-center bg-'
-        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: 'contain', }}>
+        style={{ backgroundImage: `url('placeholder.png')`, backgroundSize: '300px',  }}>
           Movies
 
         </div>

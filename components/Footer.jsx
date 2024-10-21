@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className='w-full bg-gray-800 text-white px-20'>
+    <footer className='w-full bg-gray-800 text-white pd-5 md:px-20'>
       <div className='flex flex-col gap-2 p-5 text-center'>
         <h3>Home | Terms and Condition | Privacy Policy | Collection Statement | Help | Manage Account</h3>
         <h3>Copyright © 2016 DEMO Streaming, All Rights Reserved</h3>
       </div>
-      <div className='flex justify-between p-5 items-center'>
-        <div className='flex gap-4 p-5 w-20 h-20'>
+      <div className='flex justify-between p-5 items-center flex-col md:flex-row'>
+        <div className='flex gap-4 p-5 w-20 h-20 mr-20'>
           <Image 
             src="/facebook-white.svg" 
             alt="Facebook White" 
